@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ToggleComponent from './components/ToggleComponent';
+import './App.css'
+import UpdateComponent from './components/UpdateComponent';
+import ArrayComponet from './components/ArrayComponent';
+import EffectComponent from './components/EffectComponent';
+import PreviousComponent from './components/PreviousComponent';
+import LocalStorage from './components/LocalStorage';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <EffectComponent/>
+      <ArrayComponet/>
+      <UpdateComponent/>
+      <ToggleComponent/>
+      <PreviousComponent  />
+      <LocalStorage/>
     </div>
-  );
+  )
 }
 
 export default App;
